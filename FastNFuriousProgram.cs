@@ -20,7 +20,7 @@ namespace FastFurious
         }
 
         [Command(
-            Description = "Listar veículos"
+            Description = "Listar os veículos"
         )]
         public void Vehicle()
         {
