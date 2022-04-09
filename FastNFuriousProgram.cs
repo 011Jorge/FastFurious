@@ -10,6 +10,26 @@ namespace FastFurious
     public class FastNFuriousProgram
     {
         [Command(
+            Description = "Listar os atores"
+        )]
+        public void Actor()
+        {
+            ConsoleTable
+                .From(People.GetPeople())
+                .Write();
+        }
+
+        [Command(
+            Description = "Listar veículos"
+        )]
+        public void Vehicle()
+        {
+            ConsoleTable
+                .From(Cars.GetCars())
+                .Write();
+        }
+
+        [Command(
             Description = "Listar os filmes"
         )]
         public void Movies()
